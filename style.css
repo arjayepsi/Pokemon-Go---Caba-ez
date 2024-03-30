@@ -1,0 +1,481 @@
+/* Basic reset and styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Add this CSS for the fading in and making the logo smaller effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav ul li a:hover {
+    color: #ecca40; /* Change the text color on hover */
+    text-decoration: underline; /* Underline the text on hover */
+    font-weight: bold; /* Make the text bold on hover */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+header img {
+    animation: fadeIn 5s ease-in-out; /* Adjust the duration as needed */
+    transition: transform 1s ease-in-out; /* Transition for making the logo smaller */
+    align-items: center;
+    width: 400px;
+}
+
+header img:hover {
+    transform: scale(0.3); /* Make the logo 80% of its original size on hover */
+
+}
+
+#header-logo {
+    width: 200px; /* Adjust the width as needed */
+    height:min-content; /* Maintain aspect ratio */
+    align-self: center;
+}
+
+
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(117, 202, 248);
+    background-image:image("C:\Users\Admin\Downloads\pokemon.webp");
+    background-size:100px;
+}
+
+.techcrunch-image {
+    display: block;
+    
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+header {
+    position: relative;
+    background-color: #363b81;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #363b81;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.disclaimer {
+    position:absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    color: #000000;
+    padding: 20px;
+    max-width: 80%; /* Limit the width to prevent it from overflowing */
+    text-align: center;
+}
+
+.item img,
+.item2 img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display:flex; /* Ensure proper rendering */
+    margin: 0 auto; /* Center the images horizontally */
+    margin-top: 50px;
+}
+.item {
+    position:relative; /* Set position relative for positioning */
+}
+
+.item span {
+    display:block; /* Make the span a block element */
+    margin-top: 10px; /* Adjust the margin for spacing */
+}
+
+
+.add-to-cart {
+    height: 55px;
+    width: 200px; /* Adjust width as needed */
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    background-color: rgb(173, 216, 300); /* Button background color */
+}
+
+.add-to-cart:hover {
+    background-color: rgb(173, 200, 500); /* Hover background color */
+}
+
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header{
+    font-size: 2rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container h1{
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .form{
+    margin-top: 30px;
+    max-width: 100px;
+}
+.form .input-box{
+    width: 100px;
+    margin-top: 20px;
+}
+
+
+.input-box label{
+    color: #333;
+}
+.form .input-box input{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.form .input-box1 input{
+    position: relative;
+    height: 50px;
+    width: 150%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.form button{
+    height: 55px;
+    width: 100%;
+    color: #333;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    background-color: rgb(173, 216, 300);
+}
+
+.form button:hover{
+    background-color: rgb(173, 200, 500);
+}
+
+#register {
+    position: absolute;
+    top: 105%; /* Adjust as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the form is above the image */
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#register h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+#registrationForm {
+    margin-top: 30px;
+}
+
+#registrationForm label {
+    color: #333;
+}
+
+#registrationForm input {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+#registrationForm button {
+    height: 55px;
+    width: 100%;
+    color: #333;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    background-color: rgb(173, 216, 300);
+}
+
+#registrationForm button:hover {
+    background-color: rgb(173, 200, 500);
+}
+
+
+#payment {
+    max-width: 700px;
+    margin: 0 auto;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#payment h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+#paymentForm {
+    margin-top: 30px;
+}
+
+#paymentForm label {
+    color: #333;
+}
+
+#paymentForm input {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+#paymentForm button {
+    height: 55px;
+    width: 100%;
+    color: #333;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    background-color: rgb(173, 216, 300);
+}
+
+#paymentForm button:hover {
+    background-color: rgb(173, 200, 500);
+}
+
+
+#profile, #cart {
+    max-width: 700px;
+    margin: 0 auto;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#profile h2, #cart h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+#profile div, #cart div {
+    margin-top: 20px;
+}
+
+#profile label, #cart label {
+    color: #333;
+}
+
+#profile span, #cart span {
+    display: block;
+    margin-top: 8px;
+}
+
+#profile button, #cart button {
+    height: 45px;
+    width: 200px;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    background-color: #363b81;
+}
+
+#profile button:hover, #cart button:hover {
+    background-color: #555;
+}
+
+#loginForm {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the form is above the image */
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#loginForm h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+#loginForm form {
+    margin-top: 30px;
+}
+
+#loginForm label {
+    color: #333;
+}
+
+#loginForm input {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+#loginForm button {
+    height: 55px;
+    width: 100%;
+    color: #333;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    background-color: rgb(173, 216, 300);
+}
+
+#loginForm button:hover {
+    background-color: rgb(173, 200, 500);
+}
+
+.profile-image {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper rendering */
+    margin: 0 auto; /* Center the image horizontally */
+    margin-bottom: 20px; /* Add some margin below the image */
+}
+
+#transactions {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure transactions section is above the image */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    max-width: 80%; /* Limit the width to prevent it from overflowing */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+#profile {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure transactions section is above the image */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    max-width: 80%; /* Limit the width to prevent it from overflowing */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
